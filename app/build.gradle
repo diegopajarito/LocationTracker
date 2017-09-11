@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 25
@@ -27,7 +26,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
-
+    compile 'com.google.android.gms:play-services-location:11.0.4'
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:design:25.3.1'
     compile 'com.android.support:support-vector-drawable:25.3.1'
