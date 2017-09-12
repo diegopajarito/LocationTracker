@@ -172,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
 
                     getStaticLocation();
 
-
+                    setUpLocationUpdateSettings();
 
 
                 } else {
@@ -308,6 +308,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * This method sets the call back function to be executed
+     * after receiving each of the location updates
+     */
 
     private void startLocationUpdates() {
 
@@ -320,7 +324,7 @@ public class MainActivity extends AppCompatActivity {
                     locationText = location.toString();
                     updateLocationOnScreen();
                 }
-            };
+            }
         };
 
         if (ContextCompat.checkSelfPermission(this,Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_DENIED) {
