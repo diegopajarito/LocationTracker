@@ -31,6 +31,22 @@
             android:layout_gravity="center_vertical|center_horizontal"
             android:text="TextView" />
 
+        <TextView
+            android:id="@+id/tv_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_horizontal"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_location_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="TextView" />
+
     </FrameLayout>
 
     <android.support.design.widget.BottomNavigationView
